@@ -17,4 +17,5 @@ This project implements a user interface with a theme toggle feature and a struc
 
 ## How to View
 
-[Click here to view](
+[Click here to view](https://gamaalice.github.io/modedark/)
+
