@@ -12,7 +12,7 @@ This project implements a user interface with a theme toggle feature and a struc
 
 ## Technologies
 
-- HTML5 and CSS3.
+- HTML, CSS and JAVASCRIPT.
 - Icon library: Font Awesome.
 
 ## How to View
