@@ -1,0 +1,122 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Temas */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Contêiner centralizado */
+.container {
+    text-align: center;
+}
+
+/* Estilização do switch de tema */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #1e1e1e;
+}
+
+input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+/* Ícones do tema */
+.icon {
+    font-size: 20px;
+}
+
+/* Estilização da barra de menu */
+.menu-bar {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: background-color 0.5s ease;
+}
+
+body.dark .menu-bar {
+    background: #1e1e1e;
+}
+
+/* Itens do menu */
+.menu-item {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark .menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
